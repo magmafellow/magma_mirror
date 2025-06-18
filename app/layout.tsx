@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist_Mono, Inter, Noto_Sans } from 'next/font/google'
-import './globals.css'
+import './styles/globals.css'
+import Providers from '@/providers/providers'
 
 const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
@@ -31,11 +32,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body
-        className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} font-(family-name:--font-inter) antialiased`}
+        className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} 
+        font-(family-name:--font-inter) antialiased
+        bg-surface`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

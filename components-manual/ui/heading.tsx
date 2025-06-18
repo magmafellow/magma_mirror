@@ -2,7 +2,7 @@ import type { VariantProps } from 'class-variance-authority'
 import { cva } from 'class-variance-authority'
 import { FC, JSX, ReactNode } from 'react'
 
-const heading = cva(['font-bold', 'font-(family-name:--font-noto-sans)'], {
+const heading = cva(['font-bold text-headline', 'font-(family-name:--font-noto-sans)'], {
   variants: {
     order: {
       hero: 'text-[60px] leading-[1.15] mb-[0.5em]',
