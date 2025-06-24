@@ -14,12 +14,12 @@ const heading = cva(['font-bold text-headline', 'font-(family-name:--font-noto-s
   },
 })
 
-type HeadingProps = VariantProps<typeof heading>
+type CVAHeadingProps = VariantProps<typeof heading>
 
 type ComponentProps = {
   children: ReactNode
   seo?: boolean
-} & HeadingProps
+} & CVAHeadingProps
 
 const Heading: FC<ComponentProps> = ({ order, children, seo = false }) => {
   let tag = ''

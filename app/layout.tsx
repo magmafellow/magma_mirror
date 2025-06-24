@@ -6,10 +6,12 @@ import Providers from '@/providers/providers'
 const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
   subsets: ['cyrillic', 'latin'],
+  weight: ['400', '500', '600', '700', '900'],
 })
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['cyrillic', 'latin'],
+  weight: ['400', '500', '600', '700', '900'],
 })
 
 const geistMono = Geist_Mono({
@@ -32,11 +34,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning className="dark" lang="en">
       <body
         className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} 
         font-(family-name:--font-inter) antialiased
-        bg-surface`}
+        bg-page`}
       >
         <Providers>{children}</Providers>
       </body>

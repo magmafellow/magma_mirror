@@ -86,6 +86,7 @@
   --color-accent-abyss: var(--color-accent-abyss);
 
   /* Control Colors */
+  --color-page: var(--control-color-page);
   --color-surface: var(--control-color-surface);
   --color-headline: var(--control-color-headline);
   --color-subHeadline: var(--control-color-subHeadline);
