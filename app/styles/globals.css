@@ -7,6 +7,14 @@
 @theme {
   --color-*: initial;
 
+  /* _m = manual */
+  --radius-xxs_m: 4px;
+  --radius-xs_m: 8px;
+  --radius-sm_m: 12px;
+  --radius-md_m: 16px;
+  --radius-l_m: 20px;
+  --radius-xl_m: 24px;
+  --radius-xxl_m: 32px;
 }
 
 @theme inline {

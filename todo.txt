@@ -1,0 +1,17 @@
+ 
+ --- components
+ * input.tsx [+++DONE]
+ * textarea.tsx
+ * chip.tsx
+ * tag.tsx
+ * close-button.tsx
+ * dialog.tsx
+
+ --- icons
+ * icons move to svg files locally [+++DONE]
+ * icons move to correspond .tsx files [===PROGRESS]
+
+ --- typography
+ * typography with @apply (if tailwind v4 supports it)
+
+ 
