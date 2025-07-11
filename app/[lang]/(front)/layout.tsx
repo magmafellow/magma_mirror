@@ -32,11 +32,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="en dark">
       <body
         className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} 
         font-(family-name:--font-inter) antialiased
-        bg-surface`}
+        bg-page`}
       >
         <Providers>{children}</Providers>
       </body>

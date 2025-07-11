@@ -1,0 +1,15 @@
+.container {
+
+}
+
+.section {
+  margin-bottom: 70px;
+
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 60px;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+}
