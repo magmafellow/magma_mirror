@@ -15,6 +15,9 @@ function getLocale(request: any | NextRequest) {
 }
 
 export function middleware(request: NextRequest) {
+  console.log(`- Method [${request.method}] Time [${new Date().toISOString()}]`)
+  
+  
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
   const pathnameHasLocale = locales.some(

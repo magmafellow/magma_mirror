@@ -4,6 +4,13 @@ import React from 'react'
 import styles from './components-library.module.scss'
 import { Button } from '@/components-manual/ui/button'
 import { Input } from '@/components-manual/ui/input'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components-manual/ui/select'
 
 const Page = () => {
   return (
@@ -49,10 +56,19 @@ const Page = () => {
         </div>
         <div className={styles.section}>
           <Heading seo order="h2">
-            Dropdown Lists
+            Selects
           </Heading>
           <div className={styles.section__inner}>
-
+            <Select>
+              <SelectTrigger>
+                <SelectValue placeholder='Select a fruit' />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="apple">Apple</SelectItem>
+                <SelectItem value="melon">Melon</SelectItem>
+                <SelectItem value="orange">Orange</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
         <div className={styles.section}>

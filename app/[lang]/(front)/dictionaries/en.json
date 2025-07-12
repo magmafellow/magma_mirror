@@ -1,3 +1,25 @@
 {
-  "hello": "Hello world!"
+  "hello": "Hello world!",
+
+  "header": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "works": "Works",
+      "contacts": "Contacts"
+    }
+  },
+
+  "pages": {
+    "home": {
+      "welcome_by_magma": "You are welcome!",
+      "magma_description": "Experienced web-developer. I use bullet-proof technologies that do reach goals. Whatever project you need will be done",
+
+      "buttons": {
+        "who_am_i": "Who Am I",
+        "projects": "Projects",
+        "contact": "Contacts"
+      }
+    }
+  }
 }

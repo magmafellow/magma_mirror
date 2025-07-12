@@ -2,10 +2,12 @@ import type { Metadata } from 'next'
 import { Geist_Mono, Inter, Noto_Sans } from 'next/font/google'
 import './styles/globals.css'
 import Providers from '@/providers/providers'
+import Header from '@/components-manual/blocks/header/header'
+import { Fragment } from 'react'
 
 const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
-  subsets: ['cyrillic', 'latin'],
+  subsets: ['cyrillic', 'latin', 'cyrillic-ext'],
 })
 const inter = Inter({
   variable: '--font-inter',
@@ -32,13 +34,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html suppressHydrationWarning lang="en dark">
+    <html suppressHydrationWarning lang="en">
       <body
         className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} 
         font-(family-name:--font-inter) antialiased
         bg-page`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Fragment>{children}</Fragment>
+          <div className="dialog_box"></div>
+          <div className="something_box"></div>
+        </Providers>
       </body>
     </html>
   )

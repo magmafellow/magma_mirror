@@ -2,6 +2,30 @@ import 'server-only'
 
 export type Locales = 'ru' | 'en'
 
+export type DictionaryLocale = {
+  hello: string
+  header: {
+    menu: {
+      home: string
+      about: string
+      works: string
+      contacts: string
+    }
+  }
+  pages: {
+    home: {
+      welcome_by_magma: string
+      magma_description: string
+
+      buttons: {
+        who_am_i: string
+        projects: string
+        contact: string
+      }
+    }
+  }
+}
+
 const dictionaries = {
   en: () => import('./dictionaries/en.json').then(module => module.default),
   ru: () => import('./dictionaries/ru.json').then(module => module.default),

@@ -21,8 +21,8 @@ const buttonVariants = cva(
         neutral: '',
       },
       size: {
-        md: 'px-4 py-3 rounded-lg typo-caption-md outline-2 outline-offset-2',
-        sm: 'px-3 py-1.5 rounded-lg typo-caption-sm outline-2 outline-offset-2',
+        md: 'px-4 py-3 rounded-sm typo-caption-md outline-2 outline-offset-2',
+        sm: 'px-3 py-1.5 rounded-sm typo-caption-sm outline-2 outline-offset-2',
       },
     },
     compoundVariants: [
