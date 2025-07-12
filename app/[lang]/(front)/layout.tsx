@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} 
         font-(family-name:--font-inter) antialiased
-        bg-page`}
+        bg-page typo-body-base`}
       >
         <Providers>
           <Fragment>{children}</Fragment>
