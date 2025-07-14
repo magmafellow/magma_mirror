@@ -20,6 +20,10 @@
         "projects": "Projects",
         "contact": "Contacts"
       }
+    },
+    "history": {
+      "main_headline": "Alexey Romanov",
+      "after_main": "(Web-developer)"
     }
   }
 }

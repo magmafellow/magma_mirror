@@ -1,0 +1,46 @@
+import React from 'react'
+
+type Props = {} & React.ComponentProps<'svg'>
+
+export default function IconTypeScript({ className, ...props }: Props) {
+  return (
+    <svg
+      width="82"
+      height="82"
+      viewBox="0 0 82 82"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+      className={className}
+    >
+      <path
+        d="M51.125 59.5625C52.205 60.6425 53.6698 61.25 55.1986 61.25H57.0312C59.36 61.25 61.25 59.36 61.25 57.0312V56.1875C61.25 54.8448 60.7166 53.5572 59.7672 52.6078C58.8178 51.6584 57.5302 51.125 56.1875 51.125C54.8448 51.125 53.5572 50.5916 52.6078 49.6422C51.6584 48.6928 51.125 47.4052 51.125 46.0625V45.2188C51.125 42.89 53.015 41 55.3438 41H57.1764C58.7052 41 60.17 41.6075 61.25 42.6875"
+        stroke=""
+        strokeWidth="6.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M30.875 41H44.375"
+        stroke=""
+        strokeWidth="6.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M37.625 41V61.25"
+        stroke=""
+        strokeWidth="6.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M71.375 64.625V17.375C71.375 15.5848 70.6638 13.8679 69.398 12.602C68.1321 11.3362 66.4152 10.625 64.625 10.625H17.375C15.5848 10.625 13.8679 11.3362 12.602 12.602C11.3362 13.8679 10.625 15.5848 10.625 17.375V64.625C10.625 66.4152 11.3362 68.1321 12.602 69.398C13.8679 70.6638 15.5848 71.375 17.375 71.375H64.625C66.4152 71.375 68.1321 70.6638 69.398 69.398C70.6638 68.1321 71.375 66.4152 71.375 64.625Z"
+        stroke=""
+        strokeWidth="6.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}

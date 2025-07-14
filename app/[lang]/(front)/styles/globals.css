@@ -380,19 +380,19 @@
   @apply font-(family-name:--font-inter) font-normal text-body;
 }
 .typo-body-base {
-  line-height: 1.35;
+  line-height: 1.5;
   font-size: 16px;
 }
 .typo-body-sm {
-  line-height: 1.35;
+  line-height: 1.5;
   font-size: 14px;
 }
 .typo-body-xs {
-  line-height: 1.3;
+  line-height: 1.5;
   font-size: 12px;
 }
 .typo-body-xxs {
-  line-height: 1.3;
+  line-height: 1.5;
   font-size: 10px;
 }
 

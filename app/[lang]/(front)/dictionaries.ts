@@ -23,6 +23,10 @@ export type DictionaryLocale = {
         contact: string
       }
     }
+    history: {
+      main_headline: string
+      after_main: string
+    }
   }
 }
 

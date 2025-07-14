@@ -1,5 +1,6 @@
 .header {
   position: sticky;
+  z-index: 100;
   top: 0px;
 
   &__container {
@@ -24,8 +25,8 @@
 
   &:hover {
     .logo__svg {
-      filter: drop-shadow(0px 0px 8px var(--color-red-light));
-      stroke: var(--color-red-normal);
+      filter: drop-shadow(0px 0px 8px var(--color-accent-abyss));
+      stroke: var(--color-accent-abyss);
     }
   }
 }
@@ -35,6 +36,7 @@
 
   .header__container {
     background-color: rgb(46, 52, 61, 0.5);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 
     // box-shadow: 0 0 20px rgb(255, 255, 255, .1);
@@ -42,8 +44,6 @@
 
   }
   .logo__svg {
-    filter: drop-shadow(0px 0px 12px var(--color-red-light));
-    stroke: var(--color-red-normal);
   }
 }
 

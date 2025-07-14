@@ -1,6 +1,7 @@
 import React from 'react'
 
 type Props = {} & React.ComponentProps<'svg'>
+// use fill for controlling color
 
 export default function IconDown({ className, ...props }: Props) {
   return (
