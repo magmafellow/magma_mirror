@@ -83,7 +83,7 @@ export default function StackCarousel() {
         }}
       >
         {stack.map(tech => (
-          <SwiperSlide className={`${styles.swiper_slide}`}>
+          <SwiperSlide key={tech.libraryURL} className={`${styles.swiper_slide}`}>
             <TechCard
               libraryURL={tech.libraryURL}
               description={tech.description}
