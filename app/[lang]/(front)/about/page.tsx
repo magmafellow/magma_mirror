@@ -9,6 +9,7 @@ import StackCarousel from './stack-carousel/stack-carousel'
 import { Button } from '@/components-manual/ui/button'
 import IconArrowRight from '@/components-manual/icons/nav/icon-arrow-right'
 import ContactDialog from '@/components-manual/blocks/dialogs/contact-dialog/contact-dialog'
+import OpenContactDialog from './open-contact-dialog'
 
 type PageProps = {
   params: Promise<{ lang: string }>
@@ -23,9 +24,10 @@ const localeParsVars = {
       myself in the field. I am continuously learning and actively seeking
       remote or onsite job opportunities. If you need a frontend developer for
       your project, please feel free to{' '}
-      <Link href="#" className=" text-accent-normal hover:underline">
-        contact
-      </Link>{' '}
+      <OpenContactDialog
+        className="link text-accent-normal curs-hover"
+        text="contact"
+      />{' '}
       me. I would be delighted to assist, as it would provide me with the
       opportunity to further develop my skills and knowledge.
     </p>
@@ -148,13 +150,13 @@ function Socials() {
   ]
 
   return (
-    <div className="bg-surface overflow-auto py-4 rounded-xl pl-6 max-w-[473px]">
+    <div className="bg-surface overflow-auto py-4 rounded-xl px-6 max-w-[473px]">
       <ul className="flex flex-col gap-2">
         {socials.map(social => (
-          <li key={social.name} className="flex pr-6 items-center gap-2">
+          <li key={social.name} className="flex items-center gap-2">
             <div className="typo-body-bold-sm">{social.name}</div>
             <span>-</span>
-            <Link href={social.url}>{social.url}</Link>
+            <Link className='link' href={social.url}>{social.url}</Link>
           </li>
         ))}
       </ul>
@@ -168,8 +170,10 @@ function ExploreMyProjectsBlock({ dictionary, className }: PropsBlock) {
       <Heading className="text-subHeadline mb-3" seo order="h2">
         Explore my projects
       </Heading>
-      <p className='mb-6'>Every projects is built on technologies from list above.</p>
-      <Button asChild className='w-full max-w-[360px] gap-2 group'>
+      <p className="mb-6">
+        Every projects is built on technologies from list above.
+      </p>
+      <Button asChild className="w-full max-w-[360px] gap-2 group">
         <Link href="./projects">
           <span>Checkout</span>
           <IconArrowRight className="fill-[#fff] duration-150 group-hover:translate-x-2.5 size-5" />

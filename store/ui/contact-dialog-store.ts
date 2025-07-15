@@ -8,7 +8,7 @@ type ContactDialogStore = {
 }
 
 export const useContactDialogStore = create<ContactDialogStore>()((set, get) => ({
-  open: true,
+  open: false,
   onClose: () => set({ open: false }),
   onOpen: () => set({ open: true }),
   setOpen: nextState => set({ open: nextState }),

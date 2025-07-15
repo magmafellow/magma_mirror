@@ -508,3 +508,24 @@
 }
 
 /* Typography END */
+
+
+/* cursor */
+.curs-hover {
+  &:hover {
+    cursor: default;
+  }
+}
+/* cursor END */
+/* link */
+.link {
+  transition: 150ms;
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-accent-normal);
+  }
+  &:active {
+    color: var(--color-red-normal);
+  }
+}
+/* link END */
