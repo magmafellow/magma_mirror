@@ -4,6 +4,7 @@ import BaseLayout from '@/components-manual/blocks/base-layout/base-layout'
 import ResponsiveContainer from '@/components-manual/ui/responsive-container'
 import Heading from '@/components-manual/ui/heading'
 import { Button } from '@/components-manual/ui/button'
+import Link from 'next/link'
 
 type PageProps = {
   params: Promise<{ lang: string }>
@@ -27,12 +28,14 @@ export default async function Page({ params }: PageProps) {
             {dictionary.pages.home.magma_description}
           </p>
           <div className="flex flex-col gap-(--gap-lg) max-w-[360px] mx-auto">
-            <Button>{dictionary.pages.home.buttons.who_am_i}</Button>
-            <Button variant="secondary">
-              {dictionary.pages.home.buttons.projects}
+            <Button asChild>
+              <Link href="/about">{dictionary.pages.home.buttons.who_am_i}</Link>
             </Button>
-            <Button variant="secondary">
-              {dictionary.pages.home.buttons.contact}
+            <Button asChild variant="secondary">
+              <Link href="/projects">{dictionary.pages.home.buttons.projects}</Link>
+            </Button>
+            <Button asChild variant="secondary">
+              <Link href="/contacts">{dictionary.pages.home.buttons.contact}</Link>
             </Button>
           </div>
         </main>

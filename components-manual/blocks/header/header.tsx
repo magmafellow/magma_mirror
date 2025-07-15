@@ -7,7 +7,7 @@ import ResponsiveContainer from '@/components-manual/ui/responsive-container'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 import { useHeaderScrollTransition } from './hooks/use-scroll-transition'
-import { useMobileSheetStore } from '@/store/ui/mobile-sheet'
+import { useMobileSheetStore } from '@/store/ui/mobile-sheet-store'
 import MobileSheet from './mobile-sheet/mobile-sheet'
 
 type Props = {
@@ -46,8 +46,8 @@ export default function Header({ dictionary, className, ...props }: Props) {
                 </Link>
               </li>
               <li className={`${styles.menu__item}`}>
-                <Link href="works" className={`${styles.menu__link}`}>
-                  {dictionary.header.menu.works}
+                <Link href="projects" className={`${styles.menu__link}`}>
+                  {dictionary.header.menu.projects}
                 </Link>
               </li>
               <li className={`${styles.menu__item}`}>

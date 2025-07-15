@@ -8,7 +8,7 @@ export type DictionaryLocale = {
     menu: {
       home: string
       about: string
-      works: string
+      projects: string
       contacts: string
     }
   }

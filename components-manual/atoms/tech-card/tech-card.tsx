@@ -20,7 +20,7 @@ export default function TechCard({ children, name, libraryURL, description }: Pr
 
   return (
     <div
-      className={`tech-card_outer group hover:border-vector border duration-150 overflow-hidden pb-2 relative w-[268px] h-[313px] border-surface bg-surface rounded-xl`}
+      className={`tech-card_outer group hover:border-vector border duration-150 overflow-hidden relative w-[268px] h-[313px] border-surface bg-surface rounded-xl`}
     >
       <div
         className={`${
@@ -59,7 +59,7 @@ export default function TechCard({ children, name, libraryURL, description }: Pr
           </button>
         </div>
         <div className="h-[1px] w-full bg-body/50 mb-3"></div>
-        <p className="px-4 typo-body-sm !text-subHeadline">{description}</p>
+        <p className="px-4 typo-body-sm pb-3 !text-subHeadline">{description}</p>
       </div>
     </div>
   )

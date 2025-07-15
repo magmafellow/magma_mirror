@@ -6,6 +6,9 @@ import Heading from '@/components-manual/ui/heading'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import StackCarousel from './stack-carousel/stack-carousel'
+import { Button } from '@/components-manual/ui/button'
+import IconArrowRight from '@/components-manual/icons/nav/icon-arrow-right'
+import ContactDialog from '@/components-manual/blocks/dialogs/contact-dialog/contact-dialog'
 
 type PageProps = {
   params: Promise<{ lang: string }>
@@ -43,7 +46,6 @@ const localeParsVars = {
 
 export default async function Page({ params }: PageProps) {
   const { lang } = await params
-
   const dictionary = await getDictionary(lang as Locales)
 
   return (
@@ -52,8 +54,14 @@ export default async function Page({ params }: PageProps) {
         <main className={`px-3`}>
           <IntroBlock dictionary={dictionary} className="mb-10" />
           <StackBlock dictionary={dictionary} className="mb-10" />
+          <SocialsBlock dictionary={dictionary} className="mb-10" />
+          <ExploreMyProjectsBlock dictionary={dictionary} className="mb-24" />
         </main>
       </ResponsiveContainer>
+
+      <div>
+        <ContactDialog />
+      </div>
     </BaseLayout>
   )
 }
@@ -108,6 +116,65 @@ function StackBlock({ className, dictionary }: PropsBlock) {
       <div className="relative px-8">
         <StackCarousel />
       </div>
+    </div>
+  )
+}
+
+function SocialsBlock({ className, dictionary }: PropsBlock) {
+  return (
+    <div className={cn(className)}>
+      <Heading className="text-subHeadline" seo order="h2">
+        Socials
+      </Heading>
+      <Socials />
+    </div>
+  )
+}
+
+function Socials() {
+  const socials = [
+    {
+      name: 'Github',
+      url: 'https://github.com/magmafellow',
+    },
+    {
+      name: 'Telegram',
+      url: 'https://t.me/polrekost',
+    },
+    {
+      name: 'Gmail',
+      url: 'magmafellow@gmail.com',
+    },
+  ]
+
+  return (
+    <div className="bg-surface overflow-auto py-4 rounded-xl pl-6 max-w-[473px]">
+      <ul className="flex flex-col gap-2">
+        {socials.map(social => (
+          <li key={social.name} className="flex pr-6 items-center gap-2">
+            <div className="typo-body-bold-sm">{social.name}</div>
+            <span>-</span>
+            <Link href={social.url}>{social.url}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function ExploreMyProjectsBlock({ dictionary, className }: PropsBlock) {
+  return (
+    <div className={cn(className)}>
+      <Heading className="text-subHeadline mb-3" seo order="h2">
+        Explore my projects
+      </Heading>
+      <p className='mb-6'>Every projects is built on technologies from list above.</p>
+      <Button asChild className='w-full max-w-[360px] gap-2 group'>
+        <Link href="./projects">
+          <span>Checkout</span>
+          <IconArrowRight className="fill-[#fff] duration-150 group-hover:translate-x-2.5 size-5" />
+        </Link>
+      </Button>
     </div>
   )
 }

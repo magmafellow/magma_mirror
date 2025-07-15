@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components-manual/ui/sheet-full'
-import { useMobileSheetStore } from '@/store/ui/mobile-sheet'
+import { useMobileSheetStore } from '@/store/ui/mobile-sheet-store'
 
 export default function MobileSheet() {
   const { open, setOpen } = useMobileSheetStore()
