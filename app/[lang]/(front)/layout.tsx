@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist_Mono, Inter, Noto_Sans } from 'next/font/google'
+import './styles/general.scss'
+import './styles/swiper.scss'
 import './styles/globals.css'
 import Providers from '@/providers/providers'
 import Header from '@/components-manual/construct/header/header'

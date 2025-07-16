@@ -117,6 +117,7 @@
 
   /* Control Colors */
   --color-surface: var(--control-color-surface);
+  --color-surfaceSoft: var(--control-color-surfaceSoft);
   --color-page: var(--control-color-page);
   --color-headline: var(--control-color-headline);
   --color-subHeadline: var(--control-color-subHeadline);

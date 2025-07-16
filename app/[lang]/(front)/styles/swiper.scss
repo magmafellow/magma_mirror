@@ -1,0 +1,18 @@
+
+
+
+.swiper-bullet-general {
+  transition: 300ms;
+  background-color: var(--control-color-subHeadline);
+  height: 8px;
+  width: 8px;
+  border-radius: 999px;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.swiper-bulletActive-general {
+  background-color: var(--color-accent-normal);
+}

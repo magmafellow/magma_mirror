@@ -8,3 +8,10 @@
   row-gap: 24px;
 
 }
+
+
+@media (max-width: 767.98px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -32,9 +32,9 @@ export default function Header({ dictionary, className, ...props }: Props) {
         className={`${styles.header} ${className}`}
       >
         <ResponsiveContainer className={`${styles.header__container}`}>
-          <div className={`${styles.logo}`}>
+          <Link href='/' className={`${styles.logo}`}>
             <RabbitLogo className={`${styles.logo__svg}`} />
-          </div>
+          </Link>
           <nav className={`${styles.nav}`}>
             <ul className={`${styles.menu}`}>
               <li className={`${styles.menu__item}`}>

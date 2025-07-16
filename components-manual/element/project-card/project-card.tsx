@@ -11,6 +11,7 @@ import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { useInfoProjectStore } from '@/store/ui/info-project-dialog-store'
+import Link from 'next/link'
 
 type ProjectCardButton = {
   label: string
@@ -36,13 +37,13 @@ export default function ProjectCard({ project }: Props) {
 
   const slides = [
     {
-      url: '/assets/images/mocks/story-pizza-venger.png',
+      url: '/assets/images/projects/travel-agency/desktop_promote.jpg',
     },
     {
-      url: '/assets/images/mocks/story-pizza-vegan.png',
+      url: '/assets/images/projects/travel-agency/desktop_exclusive-deals.jpg',
     },
     {
-      url: '/assets/images/mocks/story-pizza-classic.png',
+      url: '/assets/images/projects/travel-agency/desktop_subscribe.jpg',
     },
   ]
 
@@ -74,7 +75,7 @@ export default function ProjectCard({ project }: Props) {
               <IconSnowV1
                 className={`${
                   cardState === 'carousel'
-                    ? 'rotate-45 scale-110 fill-vector'
+                    ? 'fill-vector'
                     : ''
                 } relative duration-150 size-7 fill-headline`}
               />
@@ -88,8 +89,12 @@ export default function ProjectCard({ project }: Props) {
           <p className="">{project.description}</p>
         </div>
         <div className="project-card__actions flex gap-4">
-          <Button className="w-full">Enable Power</Button>
-          <Button className="w-full">Enable Strength</Button>
+          <Button asChild className="w-full">
+            <Link href="#">
+              More
+            </Link>
+          </Button>
+          {/* <Button className="w-full">Enable Strength</Button> */}
         </div>
       </div>
 
