@@ -1,4 +1,4 @@
-import BaseLayout from '@/components-manual/blocks/base-layout/base-layout'
+import BaseLayout from '@/components-manual/construct/base-layout/base-layout'
 import ResponsiveContainer from '@/components-manual/ui/responsive-container'
 import React from 'react'
 import { Locales, getDictionary } from '../dictionaries'

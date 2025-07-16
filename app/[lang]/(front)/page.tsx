@@ -1,6 +1,6 @@
 import React from 'react'
 import { Locales, getDictionary } from './dictionaries'
-import BaseLayout from '@/components-manual/blocks/base-layout/base-layout'
+import BaseLayout from '@/components-manual/construct/base-layout/base-layout'
 import ResponsiveContainer from '@/components-manual/ui/responsive-container'
 import Heading from '@/components-manual/ui/heading'
 import { Button } from '@/components-manual/ui/button'

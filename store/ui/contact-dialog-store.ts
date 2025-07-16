@@ -1,13 +1,13 @@
 import { create } from 'zustand'
 
-type ContactDialogStore = {
+type TContactDialogStore = {
   open: boolean
   onClose: () => void
   onOpen: () => void
   setOpen: (nextState: boolean) => void
 }
 
-export const useContactDialogStore = create<ContactDialogStore>()((set, get) => ({
+export const useContactDialogStore = create<TContactDialogStore>()((set, get) => ({
   open: false,
   onClose: () => set({ open: false }),
   onOpen: () => set({ open: true }),

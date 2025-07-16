@@ -1,4 +1,4 @@
-import BaseLayout from '@/components-manual/blocks/base-layout/base-layout'
+import BaseLayout from '@/components-manual/construct/base-layout/base-layout'
 import React from 'react'
 import { DictionaryLocale, Locales, getDictionary } from '../dictionaries'
 import ResponsiveContainer from '@/components-manual/ui/responsive-container'
@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import StackCarousel from './stack-carousel/stack-carousel'
 import { Button } from '@/components-manual/ui/button'
 import IconArrowRight from '@/components-manual/icons/nav/icon-arrow-right'
-import ContactDialog from '@/components-manual/blocks/dialogs/contact-dialog/contact-dialog'
+import ContactDialog from '@/components-manual/construct/dialogs/contact-dialog/contact-dialog'
 import OpenContactDialog from './open-contact-dialog'
 
 type PageProps = {

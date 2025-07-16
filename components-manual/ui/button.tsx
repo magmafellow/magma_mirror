@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
   [
-    'inline-flex text-[#fff] gap-1.5 duration-200 items-center justify-center',
+    'inline-flex text-[#fff] curs-hover gap-1.5 duration-200 items-center justify-center',
     'outline-transparent',
     'disabled:cursor-not-allowed',
   ],

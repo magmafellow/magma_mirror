@@ -513,7 +513,7 @@
 /* cursor */
 .curs-hover {
   &:hover {
-    cursor: default;
+    cursor: pointer;
   }
 }
 /* cursor END */

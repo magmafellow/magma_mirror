@@ -4,7 +4,7 @@ import React from 'react'
 import IconClose from '../icons/general/icon-close'
 
 const buttonVariants = cva(
-  'rounded-[5858px] duration-200 outline-transparent outline-2 outline-offset-2 focus-visible:outline-neutral-normal/50',
+  'rounded-[5858px] curs-hover duration-200 outline-transparent outline-2 outline-offset-2 focus-visible:outline-neutral-normal/50',
   {
     variants: {
       size: {

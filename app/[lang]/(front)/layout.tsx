@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Geist_Mono, Inter, Noto_Sans } from 'next/font/google'
 import './styles/globals.css'
 import Providers from '@/providers/providers'
-import Header from '@/components-manual/blocks/header/header'
+import Header from '@/components-manual/construct/header/header'
 import { Fragment } from 'react'
 
 const notoSans = Noto_Sans({
