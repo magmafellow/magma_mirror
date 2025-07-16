@@ -18,7 +18,7 @@ export default async function Page({ params }: PageProps) {
   return (
     <>
       <BaseLayout dictionary={dictionary}>
-        <ResponsiveContainer className="main-grow mb-24">
+        <ResponsiveContainer className="main-grow px-3 mb-24">
           <Heading seo order="h1">
             Projects
           </Heading>

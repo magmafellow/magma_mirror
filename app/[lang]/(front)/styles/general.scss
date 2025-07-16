@@ -1,0 +1,24 @@
+.general-ul {
+  padding-left: 38px;
+}
+.general-li {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background-color: var(--control-color-vector);
+
+    left: 0px;
+    top: 0.5lh;
+    transform: translate(calc(-14px - 4px - 4px), -50%);
+  }
+}
