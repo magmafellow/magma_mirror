@@ -40,7 +40,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${inter.variable} ${geistMono.variable} 
         font-(family-name:--font-inter) antialiased
-        bg-page typo-body-base`}
+        bg-page typo-body-base text-body`}
       >
         <Providers>
           <Fragment>{children}</Fragment>

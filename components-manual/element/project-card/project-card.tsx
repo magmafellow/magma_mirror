@@ -86,7 +86,7 @@ export default function ProjectCard({ project }: Props) {
           </div>
         </div>
         <div className="project-card__description flex-grow">
-          <p className="">{project.description}</p>
+          <p className="text-body">{project.description}</p>
         </div>
         <div className="project-card__actions flex gap-4">
           <Button asChild className="w-full">

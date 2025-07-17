@@ -383,7 +383,7 @@ body.scroll-locked {
 }
 
 [class*='typo-body-'] {
-  @apply font-(family-name:--font-inter) font-normal text-body;
+  @apply font-(family-name:--font-inter) font-normal;
 }
 [class*='typo-body-bold-'] {
   font-weight: 700;
@@ -535,3 +535,20 @@ body.scroll-locked {
   }
 }
 /* link END */
+
+/* base-section */
+.base-section-mb {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .base-section-mb {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .base-section-mb {
+    margin-bottom: 64px;
+  }
+}
+
+/* base-section END */
