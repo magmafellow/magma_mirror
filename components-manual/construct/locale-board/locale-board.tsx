@@ -1,7 +1,6 @@
 import { isInParentOrAncestor } from '@/lib/utils'
 import { useEffect, useState } from 'react'
 import Cookies from 'js-cookie'
-import { getPreferredLocale } from '@/middleware'
 import { Skeleton } from '@/components/ui/skeleton'
 import { usePathname, useRouter } from 'next/navigation'
 import {
@@ -10,6 +9,7 @@ import {
   SUPPORTED_LOCALES_CLIENT,
 } from '@/lib/constants'
 import useLocaleViaPath from '@/hooks/use-locale-via-path'
+import { getPreferredLocale } from '@/lib/locale'
 
 type TLocaleBoard = {
   className?: string

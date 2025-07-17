@@ -36,5 +36,5 @@ const dictionaries = {
   du: () => import('./dictionaries/du.json').then(module => module.default),
 }
 
-export const getDictionary = async (locale: 'en' | 'ru') =>
+export const getDictionary = async (locale: Locales) =>
   dictionaries[locale]()

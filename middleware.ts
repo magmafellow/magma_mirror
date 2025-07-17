@@ -1,24 +1,9 @@
 import { NextResponse, NextRequest } from 'next/server'
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from './lib/constants'
+import { getPreferredLocale } from './lib/locale'
 
 // Get the preferred locale, similar to the above or using a library
 // let headers = { 'accept-language': 'en-US,en;q=0.5' }
-
-export function getPreferredLocale(acceptLangHeader: string | null | undefined) {
-  if (!acceptLangHeader) return DEFAULT_LOCALE
-
-  const preferred = acceptLangHeader.split(',').map(part => {
-    const [lang] = part.split(';')
-    return lang.trim().toLowerCase()
-  })
-
-  for (const lang of preferred) {
-    const baseLang = lang.split('-')[0]
-    if (SUPPORTED_LOCALES.includes(baseLang)) return baseLang
-  }
-
-  return DEFAULT_LOCALE
-}
 
 export function middleware(request: NextRequest) {
   console.log(`- Method [${request.method}] Time [${new Date().toISOString()}]`)
