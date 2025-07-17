@@ -1,0 +1,29 @@
+{
+  "hello": "du Hello world!",
+
+  "header": {
+    "menu": {
+      "home": "du Home",
+      "about": "du About",
+      "projects": "du Projects",
+      "contacts": "du Contacts"
+    }
+  },
+
+  "pages": {
+    "home": {
+      "welcome_by_magma": "du You are welcome!",
+      "magma_description": "du Experienced web-developer. I use bullet-proof technologies that do reach goals. My main framework — Next.js",
+
+      "buttons": {
+        "who_am_i": "du Who Am I",
+        "projects": "du Projects",
+        "contact": "du Contacts"
+      }
+    },
+    "history": {
+      "main_headline": "du Alexey Romanov",
+      "after_main": "du (Web-developer)"
+    }
+  }
+}

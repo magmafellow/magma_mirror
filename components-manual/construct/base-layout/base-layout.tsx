@@ -1,5 +1,5 @@
 import styles from './base-layout.module.scss'
-import React, { Fragment } from 'react'
+import React from 'react'
 import Header from '../header/header'
 import Footer from '../footer/footer'
 import { DictionaryLocale } from '@/app/[lang]/(front)/dictionaries'
@@ -14,6 +14,7 @@ export default function BaseLayout({
   baseHeaderGap = true,
   children,
 }: Props) {
+
   return (
     <div className={`base-layout__wrapper`}>
       <Header
