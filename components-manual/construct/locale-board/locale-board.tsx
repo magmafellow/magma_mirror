@@ -40,7 +40,7 @@ export function LocaleBoard({ className }: TLocaleBoard) {
       throw new Error('Unknown locale has been tried to be selected')
       return
     }
-    router.push(`/${locale}`)
+    window.location.href = '/'
     Cookies.set('NEXT_LOCALE', locale)
   }
 
@@ -92,7 +92,7 @@ export function LocaleBoard({ className }: TLocaleBoard) {
       }
     }
     const onKeydownHandler = (e: KeyboardEvent) => {
-      if (e.type === 'Escape') {
+      if (e.key === 'Escape') {
         setIsOpen(false)
         document.body.classList.remove('scroll-locked')
       }

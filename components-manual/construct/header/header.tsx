@@ -13,6 +13,7 @@ import { usePathname } from 'next/navigation'
 import { isInParentOrAncestor } from '@/lib/utils'
 import { createPortal } from 'react-dom'
 import { LocaleBoard } from '../locale-board/locale-board'
+import useLocaleViaPath from '@/hooks/use-locale-via-path'
 
 type Props = {
   dictionary: DictionaryLocale
@@ -22,6 +23,7 @@ export default function Header({ dictionary, className, ...props }: Props) {
   const headerRef = useRef<HTMLElement | null>(null)
   const setOpen = useMobileSheetStore(state => state.setOpen)
   const pathname = usePathname()
+  const localeInPath = useLocaleViaPath()
 
   useHeaderScrollTransition(headerRef)
 
@@ -44,7 +46,7 @@ export default function Header({ dictionary, className, ...props }: Props) {
               <ul className={`${styles.menu}`}>
                 <li className={`${styles.menu__item}`}>
                   <Link
-                    href="/"
+                    href='/'
                     className={`${styles.menu__link} ${
                       pathname.split('/').length === 2 ? '!text-headline' : ''
                     }`}
