@@ -6,6 +6,7 @@ import { Locales, getDictionary } from '../dictionaries'
 import Heading from '@/components-manual/ui/heading'
 import ProjectCard from '@/components-manual/element/project-card/project-card'
 import InfoProjectDialog from '@/components-manual/construct/dialogs/info-project-dialog/info-project-dialog'
+import LocaleBoardV2 from '@/components-manual/construct/locale-board-v2/locale-board-v2'
 
 type PageProps = {
   params: Promise<{ lang: string }>
@@ -28,9 +29,9 @@ export default async function Page({ params }: PageProps) {
             ))}
           </div>
           <div className="h-96"></div>
+          <LocaleBoardV2 />
         </ResponsiveContainer>
       </BaseLayout>
-
       <div className="dialogs_container">
         <InfoProjectDialog />
       </div>
