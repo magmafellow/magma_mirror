@@ -20,8 +20,8 @@ export default function Index() {
   return (
     <>
       <ResponsiveContainer className="main-grow px-3 base-section-mb">
-        <div className="mb-4 flex gap-16 items-center">
-          <Heading seo order="h1" className="">
+        <div className="mb-6 imd:mb-[.5em] flex flex-col gap-4 imd:flex-row imd:gap-16 imd:items-center">
+          <Heading seo order="h1" className="mb-0">
             Let's connect
           </Heading>
 
@@ -32,7 +32,7 @@ export default function Index() {
         </div>
 
         {isShowInfo && (
-          <div className="border mb-10 rounded-2xl flex flex-col gap-4 w-max border-accent-normal py-6 px-8 bg-gradient-to-tr from-accent-solid to-accent-bold">
+          <div className="border mb-6 ilg:mb-8 icontainer:mb-10 rounded-2xl flex flex-col gap-4 w-max border-accent-normal py-6 px-8 bg-gradient-to-tr from-accent-solid to-accent-bold">
             <div className="flex gap-3 items-baseline text-[#fff]">
               <div className="typo-body-bold-base ">Phone:</div>
               <div>89269393457</div>
@@ -48,8 +48,8 @@ export default function Index() {
           </div>
         )}
 
-        <p className="mb-10">Отвечу на интересующий вопрос</p>
-        <div className="flex flex-col ilg:flex-row gap-10 ilg:gap-[60px] base-section-mb">
+        <p className="mb-4 imd:mb-6 icontainer:mb-8">Отвечу на интересующий вопрос</p>
+        <div className="flex flex-col ilg:flex-row gap-6 imd:gap-8 ilg:gap-[60px] base-section-mb">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-6 grow">
               <div className="">
@@ -69,12 +69,12 @@ export default function Index() {
           </div>
 
           <div className='grow'>
-            <div className="relative pb-5 mb-10 ilg:mb-0 max-w-[550px]">
+            <div className="relative pb-5 mb-8 ilg:mb-0 max-w-[550px]">
               <Textarea className="w-full min-h-[287px]" />
               <div className='absolute typo-body-xs left-1/2 -translate-x-1/2'>YOUR MESSAGE</div>
               <div className='absolute typo-body-xs right-0 bottom-1.5'>99/500</div>
             </div>
-            <Button className="max-w-[320px] flex mx-auto w-full ilg:hidden">Send letter</Button>
+            <Button className="max-w-[414px] flex w-full ilg:hidden">Send letter</Button>
           </div>
         </div>
         <div></div>

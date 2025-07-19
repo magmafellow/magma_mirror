@@ -11,7 +11,7 @@ function Textarea({ className, ...props }: React.ComponentProps<'textarea'>) {
       }}
       className={cn(
         'bg-neutral-solid outline-2 outline-offset-2 border outline-none text-neutral-light border-neutral-extraBold rounded-sm py-3.5 px-3',
-        'hover:border-neutral-normal',
+        'hover:border-neutral-normal focus:bg-surface',
         'focus:text-neutral-preZero focus:border-neutral-normal focus-visible:outline-neutral-normal/50',
         className
       )}
